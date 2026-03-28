@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f5f3f0;
+  color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: 1px solid #333;
+  background: transparent;
+  cursor: pointer;
+}
+
+#letter {
+  display: none;
+  text-align: left;
+  line-height: 1.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div id="intro">
+    <h2>I didn’t want to just say Happy Birthday.</h2>
+    <button onclick="openLetter()">Read this</button>
+  </div>
+
+  <div id="letter">
+    <p>
+    Happy Birthday.
+
+    I kept thinking about what to say today,
+    and honestly… nothing felt enough.
+
+    Because how do you put into words
+    what someone truly means to you?
+
+    Somewhere along the way,
+    you became my comfort, my peace,
+    and the person I silently rely on.
+
+    With you, things feel different.
+    More real. More grounded.
+
+    So today, I don’t just wish you happiness.
+    I wish you a life where you always feel valued,
+    understood, and never alone.
+
+    And if I get to be part of that life,
+    that’s something I’ll always be grateful for.
+
+    — Yours
+    </p>
+  </div>
+
+</div>
+
+<script>
+function openLetter() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
