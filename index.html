@@ -9,25 +9,25 @@
 
 <style>
 
-/* Background (emotional + blurred) */
+/* Full screen romantic background */
 body {
   margin: 0;
   height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
   font-family: 'Cormorant Garamond', serif;
-  background: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2') no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Dark overlay for focus */
+/* Dark soft overlay */
 body::before {
   content: "";
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
   z-index: 0;
 }
 
@@ -36,16 +36,22 @@ body::before {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: white;
+  color: #fff;
+}
+
+#intro h2 {
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 button {
-  padding: 10px 20px;
-  border: 1px solid white;
-  background: transparent;
-  color: white;
-  cursor: pointer;
   margin-top: 20px;
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 /* Letter container */
@@ -53,31 +59,38 @@ button {
   display: none;
   position: relative;
   z-index: 1;
-  max-width: 700px;
-  width: 90%;
+  width: 92%;
+  max-width: 650px;
   max-height: 85vh;
   overflow-y: auto;
-  background: #fffaf0;
-  padding: 40px;
+  padding: 35px 30px;
+  background: #fffaf2;
   border-radius: 6px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
   border: 1px solid #e6dccf;
+
+  /* Paper texture */
   background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
 }
 
 /* Letter text */
 .letter {
   font-family: 'Great Vibes', cursive;
-  font-size: 22px;
-  line-height: 1.8;
+  font-size: 21px;
+  line-height: 1.7;
   color: #2b2b2b;
+}
+
+/* Paragraph spacing (controlled, no extra gaps) */
+.letter p {
+  margin: 0 0 14px 0;
 }
 
 /* Signature */
 .signature {
-  margin-top: 30px;
-  font-size: 26px;
+  margin-top: 20px;
   text-align: right;
+  font-size: 24px;
 }
 
 </style>
@@ -96,28 +109,40 @@ button {
 
   <div class="letter">
 
-    Happy Birthday, My Love.<br><br>
+    <p>Happy Birthday, My Love.</p>
 
+    <p>
     I sat for a while thinking about what to write,
-    because you’re not someone I can describe in simple words.<br><br>
+    because you’re not someone I can describe in simple words.
+    </p>
 
+    <p>
     Somewhere along the way,
     you became my comfort, my calm,
-    and the person I quietly depend on.<br><br>
+    and the person I quietly depend on.
+    </p>
 
+    <p>
     The way you listen to me, even when I don’t say things clearly,
     or when I’m just overthinking everything…
-    that means more than I’ve ever expressed.<br><br>
+    that means more than I’ve ever expressed.
+    </p>
 
+    <p>
     With you, everything feels a little more real,
-    a little more meaningful.<br><br>
+    a little more meaningful.
+    </p>
 
+    <p>
     So today, I don’t just wish you happiness.
     I wish you a life where you always feel valued,
-    respected, and deeply loved.<br><br>
+    respected, and deeply loved.
+    </p>
 
+    <p>
     And if I get to be part of that life,
-    I’ll always consider myself lucky.<br><br>
+    I’ll always consider myself lucky.
+    </p>
 
     <div class="signature">— Yours ❤️</div>
 
@@ -134,4 +159,3 @@ function openLetter() {
 
 </body>
 </html>
-
