@@ -4,51 +4,37 @@
 <meta charset="UTF-8">
 <title>For You</title>
 
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
 <style>
+
+/* Background (emotional + blurred) */
 body {
   margin: 0;
-  background: #1a1a1a;
+  height: 100vh;
+  font-family: 'Cormorant Garamond', serif;
+  background: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2') no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-/* Letter background */
-.container {
-  width: 700px;
-  height: 500px;
-  background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') no-repeat center/cover;
-  padding: 60px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-  position: relative;
-}
-
-/* Overlay for readability */
-.overlay {
-  background: rgba(255, 248, 230, 0.85);
-  padding: 40px;
+/* Dark overlay for focus */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
   height: 100%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  z-index: 0;
 }
 
-/* Text style */
-.letter {
-  font-family: 'Great Vibes', cursive;
-  font-size: 22px;
-  color: #2b2b2b;
-  line-height: 1.8;
-}
-
-/* Signature */
-.signature {
-  margin-top: 20px;
-  font-size: 26px;
-}
-
-/* Button */
+/* Intro screen */
 #intro {
+  position: relative;
+  z-index: 1;
   text-align: center;
   color: white;
 }
@@ -59,44 +45,84 @@ button {
   background: transparent;
   color: white;
   cursor: pointer;
+  margin-top: 20px;
 }
+
+/* Letter container */
+.container {
+  display: none;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fffaf0;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 1px solid #e6dccf;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+/* Letter text */
+.letter {
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #2b2b2b;
+}
+
+/* Signature */
+.signature {
+  margin-top: 30px;
+  font-size: 26px;
+  text-align: right;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- Intro -->
 <div id="intro">
   <h2>I wrote something for you.</h2>
   <button onclick="openLetter()">Open</button>
 </div>
 
-<div class="container" id="letterBox" style="display:none;">
-  <div class="overlay">
-    <div class="letter">
+<!-- Letter -->
+<div class="container" id="letterBox">
 
-      Happy Birthday, My Love.<br><br>
+  <div class="letter">
 
-      I sat for a while thinking about what to write,
-      because you’re not someone I can describe in simple words.<br><br>
+    Happy Birthday, My Love.<br><br>
 
-      Somewhere along the way,
-      you became my comfort, my calm,
-      and the person I quietly depend on.<br><br>
+    I sat for a while thinking about what to write,
+    because you’re not someone I can describe in simple words.<br><br>
 
-      With you, everything feels a little more real,
-      a little more meaningful.<br><br>
+    Somewhere along the way,
+    you became my comfort, my calm,
+    and the person I quietly depend on.<br><br>
 
-      So today, I don’t just wish you happiness.
-      I wish you a life where you always feel valued,
-      respected, and deeply loved.<br><br>
+    The way you listen to me, even when I don’t say things clearly,
+    or when I’m just overthinking everything…
+    that means more than I’ve ever expressed.<br><br>
 
-      And if I get to be part of that life,
-      I’ll always consider myself lucky.<br><br>
+    With you, everything feels a little more real,
+    a little more meaningful.<br><br>
 
-      <div class="signature">— Yours ❤️</div>
+    So today, I don’t just wish you happiness.
+    I wish you a life where you always feel valued,
+    respected, and deeply loved.<br><br>
 
-    </div>
+    And if I get to be part of that life,
+    I’ll always consider myself lucky.<br><br>
+
+    <div class="signature">— Yours ❤️</div>
+
   </div>
+
 </div>
 
 <script>
