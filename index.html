@@ -4,36 +4,58 @@
 <meta charset="UTF-8">
 <title>For You</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Georgia&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
+  background: #f7f3ef;
   font-family: Georgia, serif;
-  background: #f5f3f0;
-  color: #2a2a2a;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+/* Paper card */
+.container {
+  background: #fffaf5;
+  padding: 40px;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 8px;
   text-align: center;
 }
 
-.container {
-  max-width: 600px;
-  padding: 30px;
+/* Intro */
+#intro h2 {
+  font-weight: normal;
+  color: #444;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 18px;
-  border: 1px solid #333;
+  border: 1px solid #555;
   background: transparent;
   cursor: pointer;
 }
 
+/* Letter */
 #letter {
   display: none;
   text-align: left;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+  color: #2c2c2c;
+}
+
+/* Signature */
+.signature {
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
 }
 </style>
 </head>
@@ -49,30 +71,34 @@ button {
 
   <div id="letter">
     <p>
-    Happy Birthday.
+    Happy Birthday, My Love.
 
-    I kept thinking about what to say today,
-    and honestly… nothing felt enough.
-
-    Because how do you put into words
-    what someone truly means to you?
+    I sat for a while thinking about what to write,
+    and nothing felt enough… because you are not someone
+    I can describe in simple words.
 
     Somewhere along the way,
-    you became my comfort, my peace,
-    and the person I silently rely on.
+    you became my comfort, my calm,
+    and the person I quietly depend on.
 
-    With you, things feel different.
-    More real. More grounded.
+    The way you understand me,
+    even when I don’t say much,
+    means more than I’ve ever expressed.
+
+    With you, everything feels a little more real,
+    a little more meaningful.
 
     So today, I don’t just wish you happiness.
     I wish you a life where you always feel valued,
-    understood, and never alone.
+    respected, and deeply loved.
 
     And if I get to be part of that life,
-    that’s something I’ll always be grateful for.
-
-    — Yours
+    I’ll always consider myself lucky.
     </p>
+
+    <div class="signature">
+      — Yours ❤️
+    </div>
   </div>
 
 </div>
