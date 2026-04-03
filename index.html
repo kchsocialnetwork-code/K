@@ -1,254 +1,190 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>For You</title>
+  <meta charset="UTF-8">
+  <title>Letter</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond&display=swap" rel="stylesheet">
-
-<style>
-
-/* Background */
-body {
-  margin: 0;
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') no-repeat center/cover;
-  font-family: 'Cormorant Garamond', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+```
+.letter-container {
+  max-width: 750px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  line-height: 1.9;
+  font-size: 18px;
+  color: #333;
 }
 
-/* Overlay */
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(5px);
-}
-
-/* Intro */
-#intro {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 22px;
-  border: 1px solid #fff;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* Letter box */
-.container {
-  display: none;
-  position: relative;
-  z-index: 1;
-  width: 92%;
-  max-width: 650px;
-  max-height: 85vh;
-  overflow-y: auto;
-  padding: 35px;
-  background: #fffaf2;
-  border-radius: 6px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  border: 1px solid #e6dccf;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-}
-
-/* Letter */
-.letter {
-  font-size: 19px;
-  line-height: 1.8;
-  color: #2b2b2b;
-}
-
-/* Paragraph spacing */
-.letter p {
-  margin: 0 0 16px 0;
-}
-
-/* Highlight lines */
-.highlight {
-  font-family: 'Great Vibes', cursive;
-  font-size: 26px;
-}
-
-/* Signature */
-.signature {
-  margin-top: 25px;
+.date {
   text-align: right;
-  font-family: 'Great Vibes', cursive;
-  font-size: 26px;
+  margin-bottom: 30px;
+  color: #555;
 }
 
-</style>
+.closing {
+  margin-top: 50px;
+}
+```
+
+  </style>
 </head>
 
 <body>
+  <div class="letter-container">
 
-<div id="intro">
-  <h2>I wrote something for you.</h2>
-  <button onclick="openLetter()">Open</button>
+```
+<div class="date">
+  April 3, 2026
 </div>
 
-<div class="container" id="letterBox">
-
-<div class="letter">
-
-<p>Oye…</p>
-
-<p class="highlight">Nanna aaa…</p>
+<p>Oye...</p>
 
 <p>
-The word… the emotion it carries…  
-I never thought in my life I would call someone “nanna” again after my father.
-</p>
-
-<p>Thank you for allowing me to call you that.</p>
-
-<p>
-At first, I said it unknowingly…  
-But later, I realized…  
-the way you are sometimes… your gestures…  
-made me feel like him.
+  Nanna aaaa!!! The word, the emotion it carries... I never thought in my life I would call someone nanna (that too after my father).
+  Thank you for allowing me to call you nanna.
 </p>
 
 <p>
-Maybe… I was always quietly looking for my father’s love in my man.  
-But you didn’t just remind me of him…  
-you made me feel it again.
-</p>
-
-<p>For that… I will always feel blessed.</p>
-
-<p>
-I wanted to write this long ago…  
-but I waited to tell you this on your birthday.
-</p>
-
-<p class="highlight">
-“Nuvvu puttinadaniki oka ardam undi… ahh ardam neney.”
+  You made me feel so much just by existing in my life. Unknowingly I called you that, but later I realized the way you are sometimes,
+  your gestures... they reminded me of him.
 </p>
 
 <p>
-I want you to feel blessed for having me in your life…  
-and meaning to your birth.
+  I know I quietly look for my father's love in my man. But you made me feel that too. I'm always blessed for that.
 </p>
 
 <p>
-Honestly…  
-I wasn’t even looking for love.  
-Not for a person… not for anything.
+  I just wanted to write this letter to remind you how much you mean to me and how deeply I’ve fallen for you.
 </p>
 
 <p>
-I was tired of people…  
-tired of emotions…  
-tired of everything.
+  I thought of writing this in the initial days when I committed to you, but I waited to tell you this on your birthday.
 </p>
 
 <p>
-I believed even if someone loved me…  
-I wouldn’t be able to love them back.
+  Because you know why?
 </p>
 
 <p>
-I knew I wouldn’t let anyone come close…  
-I wouldn’t let anyone touch my thoughts… my soul…
+  I want you to feel that your birth has a meaning... and that meaning is me. I want you to feel blessed for having me in your life.
 </p>
 
 <p>
-But still… there were moments…  
-when everything felt heavy…  
-especially without my father…
+  So on this very, very special day of yours, I want to express my feelings. I know we both know this, but you deserve to hear it, not just feel it.
 </p>
 
 <p>
-And somewhere inside…  
-I questioned —  
-“Don’t I deserve someone?”
-</p>
-
-<p>That’s when I left everything to Shivayya.</p>
-
-<p>
-I said…  
-if I deserve love… send me someone.
-</p>
-
-<p class="highlight">And then… you came.</p>
-
-<p>
-I still believe…  
-you were sent into my life.
+  So for now... bear with me. And thank you in advance for bearing this — and you should continue to in the future too.
 </p>
 
 <p>
-Everything just happened… naturally…  
-like it was meant to.
+  I thought I would finish this quickly like always, but once I started writing, I couldn’t stop.
+  So tappadu... you have to read all this. You can’t escape.
 </p>
 
 <p>
-I strongly feel…  
-he will take this till the end.
+  I wanted to write this in an aesthetic handwritten way and gift it to you, but couldn’t due to some commitments.
+  So adjust for now with this virtual letter 💌
 </p>
 
 <p>
-Even the thought of losing this…  
-I can’t take it.
+  Asala enduku ochav raa na life lo ki? Cheppu... cheppu... cheppu...
+  You have to answer this.
 </p>
 
 <p>
-Niku em problem ochina…  
-I worry… more than I should.
-</p>
-
-<p class="highlight">
-I’m honestly scared of how much I love you.
+  Edo na paatiki nenu untunte, na bathuku edo bathukutunte ochi motham marchesav.
+  Nanne marchesav raa edava! Idiot... I hate you for this. Hate you so much.
 </p>
 
 <p>
-I just want you close…  
-I want to take care of you…  
-I want to be there when you’re tired…
-</p>
-
-<p>I’ve never felt this way for anyone.</p>
-
-<p>
-Nuvvu undu kanna natho…  
-naku inkem odhu…
+  But seriously... I wasn’t looking for anyone at that time. Not for love, not for a person.
+  I was tired of people, bonds, emotions. I couldn’t even imagine myself with someone.
 </p>
 
 <p>
-Nuvvu eppudu na pakkana undu chalu…  
-chaalu…
+  I thought love isn’t for me. Marriage isn’t for me. Even if it happens, I thought I would fail as a partner, wife, or mother.
+  I didn’t even trust myself, even if someone loved me deeply.
 </p>
 
-<p>Naku e jeevitham motham bathikesta.</p>
+<p>
+  I knew I wouldn’t let anyone get close. I wouldn’t let anyone touch my soul or my thoughts.
+  I believed I wouldn’t love, and I wouldn’t allow someone who loves me either.
+</p>
 
-<div class="signature">— Yours ❤️</div>
+<p>
+  But somewhere, I had a small pain... a question — don’t I deserve someone?
+  Especially when things felt heavy and I couldn’t handle everything alone... mainly without my father.
+</p>
 
+<p>
+  Still, I thought I wouldn’t accept anyone. So I left everything to Shivayya.
+  I asked — if I truly deserve someone, send them to me.
+</p>
+
+<p>
+  And then... you came.
+</p>
+
+<p>
+  I still believe he sent you into my life. Everything happened so naturally.
+  He brought you, he connected us, and he’s clearing all my fears through you.
+</p>
+
+<p>
+  Even when misunderstandings come, somehow things get sorted.
+  I strongly feel he will take this relationship till marriage.
+</p>
+
+<p>
+  I don’t know what’s written ahead, but our prayers and the way we choose each other will make this work.
+  I truly believe this will work out.
+</p>
+
+<p>
+  Even the thought of “what if it doesn’t” — I can’t handle it even for a second.
+</p>
+
+<p>
+  If anything happens to you — small or big — I worry a lot.
+</p>
+
+<p>
+  Honestly... I’m scared of the love I have for you.
+</p>
+
+<p>
+  I always feel like you should be beside me.
+  I want to take care of you, make sure you’re comfortable,
+  hold you like a child when you’re stressed.
+</p>
+
+<p>
+  I have never craved someone’s presence like this.
+</p>
+
+<p>
+  Nuvvu undu kanna natho... naku inkem odhu.
+  Nuvvu eppudu na pakkana undu chalu.
+  Chaalu... naku ee jeevithaniki bathikesta.
+</p>
+
+<div class="closing">
+  <p>Yours,</p>
+  <p>[Your Name]</p>
 </div>
+```
 
-</div>
-
-<script>
-function openLetter() {
-  document.getElementById("intro").style.display = "none";
-  document.getElementById("letterBox").style.display = "block";
-}
-</script>
-
+  </div>
 </body>
 </html>
-   
-    
