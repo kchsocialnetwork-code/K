@@ -1,161 +1,244 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Letter</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 40px;
-    }
+<meta charset="UTF-8">
+<title>For You ❤️</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
-.letter-container {
-  max-width: 750px;
-  margin: auto;
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+<style>
+
+/* Background */
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1520962918287-7448c2878f65') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark soft overlay */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+}
+
+/* Intro */
+#intro {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Letter container */
+.container {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 620px;
+  max-height: 85vh;
+  overflow-y: auto;
+
+  background: #fffaf0;
+  padding: 40px 35px;
+  border-radius: 6px;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+  border: 1px solid #e6dccf;
+
+  transform: rotate(-1deg);
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+/* Letter text */
+.letter {
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
   line-height: 1.9;
-  font-size: 18px;
-  color: #333;
+  color: #2b2b2b;
 }
 
-.date {
+/* Paragraph spacing */
+.letter p {
+  margin: 0 0 14px 0;
+}
+
+/* Signature */
+.signature {
+  margin-top: 30px;
   text-align: right;
-  margin-bottom: 30px;
-  color: #555;
+  font-size: 26px;
 }
 
-.closing {
-  margin-top: 50px;
-}
-```
-
-  </style>
+</style>
 </head>
 
 <body>
-  <div class="letter-container">
 
-```
-<div class="date">
-  April 3, 2026
+<div id="intro">
+  <h2>I wrote something for you…</h2>
+  <button onclick="openLetter()">Open</button>
 </div>
 
-<p>This is for you… a quiet way of saying what I feel...🫶🏻</p>
+<div class="container" id="letterBox">
+
+<div class="letter">
+
+<p>This is for you… a quiet way of saying what I feel.</p>
 
 <p>Oye...</p>
 
 <p>
-  Nanna aaaa!!! The word, the emotion it carries... I never thought in my life I would call someone nanna (that too after my father).
-  Thank you for allowing me to call you nanna.
+Nanna aaaa!!! The word, the emotion it carries... I never thought in my life I would call someone nanna (that too after my father).
+Thank you for allowing me to call you nanna.
 </p>
 
 <p>
-  You made me feel this just by existing in my life. Unknowingly, I called you, but later I realized the way you are sometimes,
-  Your gestures reminded me of him.
-  I know I quietly look for my father's love in my man. But you even made me feel like him. I'm always blessed for that.
+You made me feel this just by existing in my life. Unknowingly, I called you, but later I realized the way you are sometimes,
+your gestures reminded me of him.
+I know I quietly look for my father's love in my man. But you even made me feel like him. I'm always blessed for that.
 </p>
-    
+
 <p>
-  I just want to write this letter to remind you how much you mean to me and how deeply I’ve fallen for you!
-  I thought of writing this in the initial days when I committed to you, but I waited to tell you this on your birthday.
+I just want to write this letter to remind you how much you mean to me and how deeply I’ve fallen for you!
+I thought of writing this in the initial days when I committed to you, but I waited to tell you this on your birthday.
 </p>
 
 <p>Because you know why?</p>
 
 <p>
-  I want you to feel that your birth has a meaning... and that meaning is me.
-  I want you to feel blessed for having me in your life.
-  So on this very, very special day of yours, I want to express my feelings.
-  I know we both know this, but you deserve to hear it, not just feel it.
-  So for now... bear with me, and thank you in advance for bearing this, and you should continue to in the future too.
-  I thought I would finish this quickly, like always, but once I started writing, I couldn’t stop.
-  So tappadu... You have to read all this. You can’t escape.
+I want you to feel that your birth has a meaning... and that meaning is me.
+I want you to feel blessed for having me in your life.
+So on this very, very special day of yours, I want to express my feelings.
+I know we both know this, but you deserve to hear it, not just feel it.
+So for now... bear with me.
 </p>
 
 <p>
-  I wanted to write this in an aesthetic handwritten way and gift it to you,
-  but I couldn’t due to some commitments. So adjust for now with this virtual letter 💌
-  Start cheydama mari ippudu???
+I thought I would finish this quickly, like always, but once I started writing, I couldn’t stop.
+So tappadu... You have to read all this. You can’t escape.
 </p>
 
 <p>
-  Asala enduku ochav raa na life lo ki? Cheppu... cheppu... cheppu...
-  You have to answer this.
+I wanted to write this in an aesthetic handwritten way and gift it to you,
+but I couldn’t due to some commitments. So adjust for now with this virtual letter 💌
+Start cheydama mari ippudu???
 </p>
 
 <p>
-  Edo na paatiki nenu untunte, na bathuku edo bathukutunte ochi motham marchesav.
-  Nanne marchesav raa edava! Idiot... I hate you for this. Hate you so much!!!
-  I know u will be laughing at this message like anything.
+Asala enduku ochav raa na life lo ki? Cheppu... cheppu... cheppu...
+You have to answer this.
 </p>
 
 <p>
-  But seriously... I wasn’t looking for anyone at that time, not for love, not for a person.
-  I was tired of people, bonds, and emotions. I couldn’t even imagine myself with someone.
-  I thought love wasn’t for me. Marriage isn’t for me. Even if it happens,
-  I thought I would fail as a partner, wife, or mother.
-  I didn’t even trust myself that I would love someone deeply.
-  I knew I wouldn’t let anyone get close. I wouldn’t let anyone touch my soul or my thoughts, etc., etc.....
-  I believed I wouldn’t love, and I wouldn’t allow someone who loves me either.
+Edo na paatiki nenu untunte, na bathuku edo bathukutunte ochi motham marchesav.
+Nanne marchesav raa edava! Idiot... I hate you for this. Hate you so much!!!
 </p>
 
 <p>
-  But somewhere, I had a small pain... a question - don’t I deserve someone?
-  Especially when things felt heavy, and I couldn’t handle everything alone... mainly without my father.
-  Still, I knew I wouldn’t accept anyone. So I left everything to Shivayya.
-  I asked if I truly deserve love, then send me that person into my life......
+But seriously... I wasn’t looking for anyone at that time, not for love, not for a person.
+I was tired of people, bonds, and emotions. I couldn’t even imagine myself with someone.
+</p>
+
+<p>
+I thought love wasn’t for me. Marriage isn’t for me. Even if it happens,
+I thought I would fail as a partner, wife, or mother.
+I didn’t even trust myself that I would love someone deeply.
+</p>
+
+<p>
+I knew I wouldn’t let anyone get close. I wouldn’t let anyone touch my soul or my thoughts.
+I believed I wouldn’t love, and I wouldn’t allow someone who loves me either.
+</p>
+
+<p>
+But somewhere, I had a small pain... a question — don’t I deserve someone?
+Especially when things felt heavy, mainly without my father.
+</p>
+
+<p>
+Still, I knew I wouldn’t accept anyone. So I left everything to Shivayya.
+I asked if I truly deserve love, then send me that person into my life...
 </p>
 
 <p>And then... You came... Nuvvu vachav raa, alane natho undipo...</p>
 
 <p>
-  I still believe he sent you into my life. Everything happened so naturally.
-  He brought you, he connected us, and he’s clearing all my fears when I'm not sure about you, many times...then and now and always(Shivayya ne antha,anni sort chestaru manaki).....
-  Even when misunderstandings come, somehow things get sorted (because he did for me, no no for us).
-  I strongly feel he will turn this relationship into a marriage.
+I still believe he sent you into my life. Everything happened so naturally.
+He brought you, connected us, and cleared my fears many times...
+Even misunderstandings got sorted somehow.
 </p>
 
 <p>
-  I don’t know what’s written ahead, but our prayers and the way we choose each other
-  will make this work. I truly believe this will work out. Ayane chestaru, cheyali....kuthuru kosam.....
+I strongly feel he will take this relationship to marriage.
 </p>
 
 <p>
-  Even the thought of what if it doesn’t, I can’t handle it even for a second.
-  If anything happens to you, small or big,  I worry a lot.
-  Honestly... I’m scared of the love I have for you.
+I don’t know what’s written ahead, but our prayers and the way we choose each other
+will make this work.
 </p>
 
 <p>
-  I always feel like you should be beside me.
-  I want to take care of you like a child, make sure you’re comfortable when you’re stressed.
-  I have never craved someone’s presence like this... 
-  Nuvvu undu kanna natho... naku inkem odhu. Nuvvu eppudu na pakkana undu chalu..
-  Chaalu... naku ee jeevithaniki bathikesta.....
-</p> 
-    
-<p>
-  You’re not just someone in my life, you’re the one I want to end up with......
+Even the thought of what if it doesn’t... I can’t handle it even for a second.
+If anything happens to you, I worry a lot.
 </p>
 
 <p>
-  And lastly,
-  Many, many, many, many, many more happy returns of the day!!! Kannayya ❤️😘
-  Wishing your heart always be at peace, your body healthy, and your life filled with true happiness. May God bless you with many meaningful years ahead!
+Honestly... I’m scared of the love I have for you.
+</p>
 
-<div class="closing">
-  <p>Yours,</p>
-  <p>Minion</p>
+<p>
+I always feel like you should be beside me.
+I want to take care of you like a child, make sure you're comfortable.
+I have never craved someone’s presence like this...
+</p>
+
+<p>
+Nuvvu undu kanna natho... naku inkem odhu.
+Nuvvu eppudu na pakkana undu chalu...
+Chaalu... naku ee jeevithaniki bathikesta...
+</p>
+
+<p>
+You’re not just someone in my life,
+you’re the one I want to end up with...
+</p>
+
+<p>
+And lastly,
+Many many many happy returns of the day Kannayya ❤️😘
+Wishing your heart peace, your health strength, and your life true happiness.
+</p>
+
+<div class="signature">— Yours ❤️</div>
+
 </div>
 
+</div>
 
-  </div>
+<script>
+function openLetter() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("letterBox").style.display = "block";
+}
+</script>
+
 </body>
 </html>
