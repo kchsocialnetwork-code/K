@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>For You ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,29 +12,17 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1520962918287-7448c2878f65') no-repeat center/cover;
+  background: #0f0f0f;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Dark soft overlay */
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.45);
-  backdrop-filter: blur(4px);
-}
-
 /* Intro */
 #intro {
-  position: relative;
-  z-index: 1;
   text-align: center;
   color: #fff;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 button {
@@ -46,45 +34,63 @@ button {
   cursor: pointer;
 }
 
+/* Image Section */
+#imageSection {
+  display: none;
+  text-align: center;
+}
+
+#imageSection img {
+  width: 260px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
 /* Letter container */
 .container {
   display: none;
-  position: relative;
-  z-index: 1;
   width: 92%;
-  max-width: 620px;
+  max-width: 650px;
   max-height: 85vh;
   overflow-y: auto;
 
-  background: #fffaf0;
-  padding: 40px 35px;
+  padding: 40px;
+
+  background: rgba(255, 250, 240, 0.95);
   border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 
-  box-shadow: 0 25px 70px rgba(0,0,0,0.5);
-  border: 1px solid #e6dccf;
+  position: relative;
+}
 
-  transform: rotate(-1deg);
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+/* Subtle background image */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('bg.jpg') center/cover no-repeat;
+  opacity: 0.08;
 }
 
 /* Letter text */
 .letter {
-  font-family: 'Dancing Script', cursive;
-  font-size: 22px;
+  position: relative;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px;
   line-height: 1.9;
   color: #2b2b2b;
 }
 
 /* Paragraph spacing */
 .letter p {
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
 }
 
 /* Signature */
 .signature {
   margin-top: 30px;
   text-align: right;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 </style>
@@ -92,11 +98,20 @@ button {
 
 <body>
 
+<!-- Intro -->
 <div id="intro">
-  <h2>I wrote something for you…</h2>
-  <button onclick="openLetter()">Open</button>
+  <h2>This is for you… a quiet way of saying what I feel.</h2>
+  <button onclick="showImage()">Open</button>
 </div>
 
+<!-- Heart Image -->
+<div id="imageSection">
+  <img src="heart.jpg" alt="heart hands">
+  <br>
+  <button onclick="openLetter()">Read</button>
+</div>
+
+<!-- Letter -->
 <div class="container" id="letterBox">
 
 <div class="letter">
@@ -234,8 +249,13 @@ Wishing your heart peace, your health strength, and your life true happiness.
 </div>
 
 <script>
-function openLetter() {
+function showImage() {
   document.getElementById("intro").style.display = "none";
+  document.getElementById("imageSection").style.display = "block";
+}
+
+function openLetter() {
+  document.getElementById("imageSection").style.display = "none";
   document.getElementById("letterBox").style.display = "block";
 }
 </script>
